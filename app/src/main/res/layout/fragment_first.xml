@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.FirstFragment">
+
+    <ImageView
+        android:id="@+id/ic_photo"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/profile_image"
+        android:src="@drawable/ic_photo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColorHint="@color/grey_hint"
+        android:hint="@string/name"
+        android:background="@drawable/bg_edit_text"
+        android:paddingHorizontal="20dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_palindrome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColorHint="@color/grey_hint"
+        android:hint="@string/palindrome"
+        android:background="@drawable/bg_edit_text"
+        android:paddingHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:background="@drawable/bg_btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/check"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:background="@drawable/bg_btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/next"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
